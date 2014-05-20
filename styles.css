@@ -5,11 +5,39 @@ html {
 
 body {
   margin: 0;
+  font-family: 'jaf-bernina-sans', Sans;
+  font-size: 16px;
   background: rgb(240, 240, 240);
 }
 
-#topnav {
-  padding: 10px 15px;
+.container {
+  padding: 0 2em;
+}
+
+#topbar {
+  padding: 1.5em 0;
   background: rgb(250, 250, 250);
-  border-bottom: 1px solid rgb(50, 50, 50);
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#topbar a.logo {
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 900;
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+}
+
+#topbar nav.menu {
+  float: right;
+}
+
+#topbar nav.menu a {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  margin: 0.2em 0.3em;
+  font-size: 1em;
+  line-height: 1;
+  color: rgb(140, 140, 140);
+  text-decoration: none;
 }
