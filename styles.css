@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: 'jaf-bernina-sans', Sans;
   font-size: 16px;
-  background: rgb(240, 240, 240);
+  background: rgb(250, 250, 250);
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 
 #topbar {
   padding: 1.5em 0;
-  background: rgb(250, 250, 250);
+  background: rgb(245, 245, 245);
   border-bottom: 1px solid rgb(200, 200, 200);
 }
 
@@ -30,6 +30,7 @@ body {
 
 #topbar nav.menu {
   float: right;
+  pointer-events: none;
 }
 
 #topbar nav.menu a {
@@ -40,4 +41,47 @@ body {
   line-height: 1;
   color: rgb(140, 140, 140);
   text-decoration: none;
+  border-bottom: 1px solid rgba(140, 140, 140, 0);
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+#topbar nav.menu a:hover {
+  border-bottom: 1px solid rgba(140, 140, 140, 0.6);
+}
+
+#intro {
+  margin-top: 4em;
+}
+
+#intro h1 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  text-align: center;
+  font-size: 2.5em;
+  pointer-events: none;
+}
+
+#intro h2 {
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
+#intro .video-wrap {
+  width: 900px;
+  height: 525px;
+  margin: 3em auto;
+  padding: 39px 122px 89px 119px;
+  background: transparent url('images/mba.png');
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
+#intro .video-wrap img.thumbnail {
+  width: 660px;
+  height: 413px;
 }
