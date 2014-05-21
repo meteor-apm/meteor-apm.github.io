@@ -122,7 +122,15 @@ body {
   color: rgb(100, 100, 100);
 }
 
-#intro .quotes blockquote p a {
+#intro .quotes blockquote p.quote a {
+  display: block;
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+#intro .quotes blockquote p.person a {
   color: rgb(120, 120, 120);
   text-decoration: none;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
@@ -130,7 +138,7 @@ body {
   pointer-events: auto;
 }
 
-#intro .quotes blockquote p a:hover {
+#intro .quotes blockquote p.person a:hover {
   border-bottom: 1px solid rgba(140, 140, 140, 0.8);
 }
 
@@ -161,4 +169,32 @@ body {
 .connect p {
   text-align: center;
   color: rgb(140, 140, 140);
+}
+
+#footer {
+  padding: 1.5em 0;
+  background: rgb(245, 245, 245);
+  border-top: 1px solid rgb(200, 200, 200);
+}
+
+#footer nav.menu {
+  float: right;
+  pointer-events: none;
+}
+
+#footer nav.menu a {
+  display: block;
+  padding: 0.3em 0.7em;
+  margin: 0.2em 0.3em;
+  font-size: 1em;
+  line-height: 1;
+  color: rgb(140, 140, 140);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(140, 140, 140, 0);
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+#footer nav.menu a:hover {
+  border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
