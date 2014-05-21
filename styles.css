@@ -158,15 +158,17 @@ body {
   width: 100%;
   padding: 0.3em;
   font-size: 2em;
-  border: 3px solid rgba(30, 60, 30, 0.5);
+  border: 3px solid rgba(30, 30, 30, 0.5);
   background: rgb(245, 245, 245);
-  color: rgba(30, 60, 30, 0.7);
+  color: rgba(30, 30, 30, 0.7);
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .connect a:hover {
+  border: 3px solid rgba(50, 90, 50, 0.5);
+  color: rgba(50, 90, 50, 0.7);
   transform: translate(0, -10px);
   -webkit-transform: translate(0, -10px);
   -moz-transform: translate(0, -10px);
