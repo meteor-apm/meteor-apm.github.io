@@ -153,18 +153,21 @@ body {
   margin: 5em auto 3em auto;
 }
 
-.connect button {
+.connect a {
+  display: block;
   width: 100%;
   padding: 0.3em;
   font-size: 2em;
-  border-radius: 3em;
   border: 3px solid rgba(30, 60, 30, 0.5);
   background: rgb(245, 245, 245);
   color: rgba(30, 60, 30, 0.7);
-  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-.connect button:hover {
+.connect a:hover {
+  transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
 }
@@ -172,6 +175,77 @@ body {
 .connect p {
   text-align: center;
   color: rgb(140, 140, 140);
+  pointer-events: none;
+}
+
+#features {
+
+}
+
+#features .feature {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+#features .feature + .feature {
+  margin-top: 5em;
+}
+
+#features .feature .inner {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+#features .feature h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+#features .feature p {
+  width: 45%;
+  font-size: 1em;
+  padding-right: 2em;
+  color: rgb(100, 100, 100);
+  box-sizing: border-box;
+}
+
+#features .feature p a {
+  color: rgb(140, 140, 140);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(140, 140, 140, 0);
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+#features .feature p a:hover {
+  border-bottom: 1px solid rgba(140, 140, 140, 1);
+}
+
+#features .feature img {
+  width: 55%;
+  padding: 1em;
+  float: right;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 230);
+  box-sizing: border-box;
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+#features .feature img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+#features .feature hr {
+  clear: both;
+  border: none;
+  padding-top: 1em;
 }
 
 #footer {
