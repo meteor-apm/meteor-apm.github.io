@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  {% assign head_title = page.title | append: " - Meteor APM Academy" %}
+  {% include head.html %}
+</head>
+<body>
+  {% assign page_type = "academy" %}
+  {% assign only_title = "true" %}
+  {% include header.html %}
+
+  <section id="main">
+    <a href="http://mad.ly/signups/106626/join" class="subscribe">Subscribe to Academy</a>
+    {% include post.html %}
+    {% include comments.html %}
+  </section>
+
+  {% include footer.html %}
+</body>
+</html>

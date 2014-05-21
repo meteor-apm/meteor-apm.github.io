@@ -1,30 +1,8 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Meteor APM</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="//use.typekit.net/ypr5vji.js"></script>
-  <script src="marked.js"></script>
-  <script src="scripts.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-</head>
-<body>
-
-  <header id="topbar">
-    <div class="container">
-      <a href="/" class="logo">Meteor APM</a>
-      <nav class="menu">
-        <a href="#">Docs</a>
-        <a href="#">Blog</a>
-        <a href="#">Academy</a>
-        <a href="#">Support</a>
-      </nav>
-    </div>
-  </header>
-
-  <article class="container MD">
-# Meteor APM Terms and Conditions ("Agreement")
+---
+layout: page
+title: Meteor APM Terms and Conditions ("Agreement")
+permalink: /terms_and_conditions.html
+---
 
 This Agreement was last modified on May 16, 2014.
 
@@ -78,17 +56,3 @@ If you have any questions about this Agreement, please contact us.
 
 Email: hello@meteorhacks.com
 Address: MeteorHacks Pvt Ltd, Orion City, Colombo 9, Sri Lanka.
-  </article>
-
-  <footer id="footer">
-    <div class="container">
-      <nav class="menu">
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-      </nav>
-      <br style="clear:both">
-    </div>
-  </footer>
-
-</body>
-</html>

@@ -1,34 +1,12 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Meteor APM</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="//use.typekit.net/ypr5vji.js"></script>
-  <script src="marked.js"></script>
-  <script src="scripts.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-</head>
-<body>
-
-  <header id="topbar">
-    <div class="container">
-      <a href="/" class="logo">Meteor APM</a>
-      <nav class="menu">
-        <a href="#">Docs</a>
-        <a href="#">Blog</a>
-        <a href="#">Academy</a>
-        <a href="#">Support</a>
-      </nav>
-    </div>
-  </header>
-
-  <article class="container MD">
-# Meteor APM Privacy Policy
+---
+layout: page
+title: Meteor APM Privacy Policy
+permalink: /privacy_policy.html
+---
 
 This Privacy Policy was last modified on May 16, 2014.
 
-MeteorHacks Private Limited ("us", "we", or "our") operates &lt;http://meteorapm.com&gt; (the "Meteor APM"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Meteor APM.
+MeteorHacks Private Limited ("us", "we", or "our") operates <http://meteorapm.com> (the "Meteor APM"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Meteor APM.
 
 We will not use or share your information with anyone except as described in this Privacy Policy. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources. By using the Meteor APM or using the APM Smart Package, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at http://meteorapm.com.
 
@@ -68,17 +46,3 @@ If you have any questions about this Privacy Policy, please contact us.
 
 Email: hello@meteorhacks.com
 Address: MeteorHacks Pvt Ltd, Orion City, Colombo 9, Sri Lanka.
-  </article>
-
-  <footer id="footer">
-    <div class="container">
-      <nav class="menu">
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-      </nav>
-      <br style="clear:both">
-    </div>
-  </footer>
-
-</body>
-</html>

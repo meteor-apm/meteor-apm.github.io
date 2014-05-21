@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  {% assign head_title = page.title | append: " - Meteor APM" %}
+  {% include head.html %}
+</head>
+<body>
+  {% assign page_type = "page" %}
+  {% include header.html %}
+  <article class="container">
+    <h1>{{page.title}}</h1>
+    {{content}}
+  </article>
+  {% include footer.html %}
+</body>
+</html>

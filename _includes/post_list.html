@@ -1,0 +1,18 @@
+{% for post in post_list %}
+  <article class="post post-container">
+    {% if only_title == "true" %}
+    <h1 class="title">
+      <a href='{{ post.link }}' class="link">{{ post.title }}</a><br>
+    </h1>
+    {% else %}
+    <h1 class="title">
+      <a href='{{ post.link }}' class="link">{{ post.title }}</a><br>
+      <small>
+        by <a href="https://twitter.com/arunoda">arunoda</a> -
+        {{ post.date }}
+      </small>
+    </h1>
+    {% endif %}
+    <p class="summary">{{ post.summery }}</p>
+  </article>
+{% endfor %}

@@ -1,0 +1,14 @@
+  <header id="topbar">
+    <div class="container">
+      <a href="/" class="logo">Meteor APM</a>
+      <nav class="menu">
+        {% for page in site.data.links %}
+          {%if page_type == page.type %}
+            <a class="current" href="{{page.link}}">{{page.caption}}</a>
+          {%else%}
+            <a href="{{page.link}}">{{page.caption}}</a>
+          {%endif%}
+        {% endfor %}
+      </nav>
+    </div>
+  </header>

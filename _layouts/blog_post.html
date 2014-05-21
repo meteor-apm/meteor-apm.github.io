@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  {% assign head_title = page.title | append: " - Meteor APM Blog" %}
+  {% include head.html %}
+</head>
+<body>
+  {% assign page_type = "blog" %}
+  {% include header.html %}
+
+  <section id="main">
+    <a href="http://mad.ly/signups/106624/join" class="subscribe">Subscribe to Blog</a>
+    {% include post.html %}
+    {% include comments.html %}
+  </section>
+
+  {% include footer.html %}
+</body>
+</html>

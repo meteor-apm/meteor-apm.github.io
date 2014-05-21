@@ -1,0 +1,6 @@
+permalink: /:title.html
+url: "http://localhost"
+paginate: 10
+exclude:
+- Guardfile
+gems: ['jekyll-less']
