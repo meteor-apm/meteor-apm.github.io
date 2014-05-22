@@ -20,13 +20,13 @@ body {
   margin: 0 auto;
 }
 
-#topbar {
+#header {
   padding: 1.5em 0;
   background: rgb(245, 245, 245);
   border-bottom: 1px solid rgb(200, 200, 200);
 }
 
-#topbar a.logo {
+#header a.logo {
   font-size: 2em;
   line-height: 1;
   font-weight: 900;
@@ -34,12 +34,12 @@ body {
   text-decoration: none;
 }
 
-#topbar nav.menu {
+#header nav.menu {
   float: right;
   pointer-events: none;
 }
 
-#topbar nav.menu a {
+#header nav.menu a {
   display: inline-block;
   padding: 0.3em 0.7em;
   margin: 0.2em 0.3em;
@@ -52,11 +52,11 @@ body {
   pointer-events: auto;
 }
 
-#topbar nav.menu a:hover {
+#header nav.menu a:hover {
   border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
 
-#topbar nav.menu a.current {
+#header nav.menu a.current {
   border-bottom: 1px solid rgba(140, 140, 140, 0.3);
 }
 
