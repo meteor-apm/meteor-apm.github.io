@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  {% assign head_title = "Meteor APM Academy" %}
+  {% assign head_title = page.title | append: " - Meteor APM Academy" %}
   {% include head.html %}
 </head>
 <body>
-  <!-- Header Area -->
   {% assign page_type = "academy" %}
+  {% assign only_title = "true" %}
+  {% assign post_list = site.data.academy %}
   {% include header.html %}
-  
-  <div class='col-md-2'></div>
-  <div class='col-md-7 blog-home'>
-    <a href="http://mad.ly/signups/106626/join" class="btn btn-subscribe">
-      Subscribe to Academy
-    </a>
-    <div style="margin-top: 40px">
-      {% assign only_title = "true" %}
-      {% assign post_list = site.data.academy %}
-      {% include post_list.html %}
-    </div>
-  </div>
-  <div class='col-md-3'>
-    
-  </div>
+
+  <section id="main">
+    <a href="http://mad.ly/signups/106626/join" class="subscribe">Subscribe to Academy</a>
+    {% include post_list.html %}
+  </section>
+
   {% include footer.html %}
 </body>
 </html>

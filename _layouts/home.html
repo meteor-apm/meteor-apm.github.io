@@ -6,25 +6,129 @@
   {% include head.html %}
 </head>
 <body>
-  <!-- Header Area -->
   {% include header.html %}
 
-  <div class='col-md-2'></div>
-  <div class='col-md-8'>
-    <div class="home">
-      <h1>Meteor APM</h1>
-      <h2>Application Performance Monitoring for Meteor</h2>
-      <div id='launch-link'>
-        <a href="http://meteorhacks.com/june-2nd-we-are-launching-meteor-apm.html">June 2nd - Meteor APM Public Release</a>
+  <section id="intro">
+    <div class="container">
+      <h1>See what's happening in your <strong>Meteor</strong> app in realtime</h1>
+      <h2>Then apply fixes and improve where it needs most</h2>
+      <div class="video-wrap">
+        <iframe width="704" height="441" src="//www.youtube-nocookie.com/embed/xXUjpHHfTLY?rel=0&theme=dark&showinfo=0&modestbranding=1&controls=2&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
       </div>
-      <img src="/images/meteorapm.png" alt='Meteor APM -Application Performance Monitoring for Meteor'> 
-      <form action="https://madmimi.com/signups/subscribe/99485" id="mad_mimi_signup_form" method="post" target="_blank">
-        <input name="signup[email]" class='email' type='text' placeholder='Enter your email'/>
-        <input class='submit' type='submit' value="Request Early Access" />
-      </form>   
+      <div class="quotes">
+        <blockquote>
+          <img src="http://lorempixel.com/60/60/people/" alt="">
+          <p class="quote"><a href="#">I could reduce response time from 4 seconds to 1 second thanks to <strong>Meteor APM</strong></a></p>
+          <p class="person">Denis @ <a href="#">Meteor PinTask</a></p>
+        </blockquote>
+        <blockquote>
+          <img src="http://lorempixel.com/60/60/people/" alt="">
+          <p class="quote"><a href="#"><strong>Meteor APM</strong> saves a lot of time when developing TheCareNoteBook because it told us whereshould we need to optimize</a></p>
+          <p class="person">Chris @ <a href="#">TheCareNoteBook</a></p>
+        </blockquote>
+        <blockquote>
+          <img src="http://lorempixel.com/60/60/people/" alt="">
+          <p class="quote"><a href="#">I was able to identify issues with Stage3 app in terms of slowness and CPU issues with using <strong>Meteor APM</strong> easily</a></p>
+          <p class="person">Arunoda @ <a href="#">MeteorHacks</a></p>
+        </blockquote>
+      </div>
     </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <a href="#" class="connect">
+        Connect Your App<br>
+        <small>(It's Free Forever)</small>
+      </a>
     </div>
-  <div class='col-md-2'></div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h1 class="intro">What can I do with Meteor APM?</h1>
+      <div class="feature">
+        <div class="inner">
+          <h2>Make your app faster</h2>
+          <img src="images/features/faster-recommendation.png" alt="Recommendation System">
+          <p>In order to make your app faster you need reduce the <strong>Response Time</strong> of your most commonly used methods and publications. Our <strong>Recommendation System</strong> will tell you which methods and publication you should start focus on.</p>
+          <hr>
+          <img src="images/features/faster-traces.png" alt="Recommendation System">
+          <p>Then you can use our tracing capability to decide where is the bottleneck and apply fixes with our guides.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Send less data over the network</h2>
+          <img src="images/features/lessdata-summary.png" alt="Average Latency" class="full">
+          <p>If you send more data with publications, it will make your app slower specially in mobile networks. You can track this latency with our <strong>Avg. Network Latency</strong>.</p>
+          <hr>
+          <img src="images/features/latency-recommendation.png" alt="Recommendation System">
+          <p>Our recommendation system will tell you which publication you should start focus on. Then you can use our guides to reduce the the data you sent and improve the <strong>Avg. Network Latency</strong></p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Reduce CPU and network usage</h2>
+          <img src="images/features/cpuusage-summary.png" alt="Observer Reuse" class="full">
+          <p>Each subscription will create one or many observers. Observers initially fetch data from the DB and send to the client. If you are having a lot of subscriptions, there will be a lot of observers and they will impact on the CPU and Network.</p>
+          <hr>
+          <img src="images/features/cpuusage-list.png" alt="Sorted by Observer Reuse">
+          <p>But, Meteor could reuse observers for identical queries. You can track the Observer Reuse from our dashboard directly.</p>
+          <p>Then you can sort, publication with Low <strong>Observer Reuse</strong> & apply fixes with our guides.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Better utilization of server memory</h2>
+          <img src="images/features/memory-summary.png" alt="Update Ratio" class="full">
+          <p>Meteor maintains a copy of all your data sent to each client in the memory. It will be used to detect exact changes which needs to be sent to the client. But if you've a lot client or sending a lot of data, your app will drain server Memory.</p>
+          <hr>
+          <img src="images/features/memory-list.png" alt="Update Ratio">
+          <p>We'll show you a very unique metric called <strong>Update Ratio</strong> which shows you the percentage of data change compared with all the data sent to the client.</p>
+          <p>If the <strong>Update Ratio</strong> is low, you actually don't need to keep them in the server Memory. So you can pick publication which sends a lot of data and having low update ratio; then apply our guides on how to avoid caching data on the server.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Quickly debug and fix errors</h2>
+          <img src="images/features/debug-trace.png" alt="Debug Errors">
+          <p>Errors are common for any application. You can track them with the application log or similar cloud services. We bring tracking errors into the next stage. Now with Meteor APM, you can debug errors with the method traces and identify the root cause quickly.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Improve user experience</h2>
+          <img src="images/features/userexp-list.png" alt="Shortest Lifespan">
+          <p>Normally, Iron Router unsubscribe all the current route's subscriptions, before moving into another routes. Then, for each route change users needs to wait until data comes back from the server. Additionally, this will increase add unnecessary server load as well.</p>
+          <p>You can track those publications by sorting <strong>Shortest Lifespan</strong> and use our guidelines on improving this behaviour.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="inner">
+          <h2>Understand overall system performance</h2>
+          <p>Understanding Overall System Performance is crucial at a glance is very important for every application. So, we make it simple, now you can track session, Response Time, CPU and memory usage in a single view. This is a perfect match for a Dashboard.</p>
+          <p><a href="#">Read More</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <a href="#" class="connect">
+        Connect Your App<br>
+        <small>(It's Free Forever)</small>
+      </a>
+    </div>
+  </section>
+
   {% include footer.html %}
 </body>
 </html>

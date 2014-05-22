@@ -5,26 +5,15 @@
   {% include head.html %}
 </head>
 <body>
-  <!-- Header Area -->
   {% assign page_type = "blog" %}
   {% include header.html %}
-  
-  <div class='col-md-2'></div>
-  <div class='col-md-7 post'>
-    <a href="http://mad.ly/signups/106624/join" class="btn btn-subscribe">
-      Subscribe to Blog
-    </a>
-    <div style="margin: 40px 0 20px 0">
-      {% include post.html %}
-    </div>
-    <a href="http://mad.ly/signups/106624/join" class="btn btn-default btn-subscribe">
-      Subscribe to Blog
-    </a>
-    <div style="margin-top: 40px">
-      {% include comments.html %}
-    </div>
-  </div>
-  <div class='col-md-3'></div>
+
+  <section id="main">
+    <a href="http://mad.ly/signups/106624/join" class="subscribe">Subscribe to Blog</a>
+    {% include post.html %}
+    {% include comments.html %}
+  </section>
+
   {% include footer.html %}
 </body>
 </html>

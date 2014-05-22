@@ -1,20 +1,18 @@
-<div class="post-list">
-  {% for post in post_list %}
-    <div class='post-list-item'>
-      <h2><a href='{{ post.link }}' class="link">{{ post.title }}</a></h2>
-      <div>
-        {% if only_title == "true" %}
-          
-        {% else %}
-          <span class="who">by 
-            <a href="https://twitter.com/arunoda">arunoda</a>
-          </span> - 
-          <span class="date">{{ post.date }}</span>
-        {% endif %}
-      </div>
-      <div class="summery">
-        {{ post.summery }}
-      </div>
-    </div>
-  {% endfor %}
-</div>
+{% for post in post_list %}
+  <article class="post post-container">
+    {% if only_title == "true" %}
+    <h1 class="title">
+      <a href='{{ post.link }}' class="link">{{ post.title }}</a><br>
+    </h1>
+    {% else %}
+    <h1 class="title">
+      <a href='{{ post.link }}' class="link">{{ post.title }}</a><br>
+      <small>
+        by <a href="https://twitter.com/arunoda">arunoda</a> -
+        {{ post.date }}
+      </small>
+    </h1>
+    {% endif %}
+    <p class="summary">{{ post.summery }}</p>
+  </article>
+{% endfor %}
