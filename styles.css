@@ -486,3 +486,77 @@ article.post.single blockquote {
 #footer nav.menu a:hover {
   border-bottom: 1px solid rgba(140, 140, 140, 0.6);
 }
+
+@media all and (max-width: 1000px) {
+  body {
+    font-size: 12px;
+  }
+
+  #header a.logo {
+    display: block;
+    text-align: center;
+  }
+
+  #header nav.menu,
+  #footer nav.menu {
+    display: block;
+    float: none;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .container,
+  article.post,
+  .post-container,
+  .container.comments {
+    width: 90%;
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+
+  #intro .video-wrap {
+    display: none;
+  }
+
+  #intro .quotes blockquote {
+    display: block;
+    margin: 2em auto;
+    width: 90%;
+    padding-left: 60px;
+    box-sizing: border-box;
+    position: relative;
+    pointer-events: none;
+  }
+
+  #features .feature h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  #features .feature p,
+  #features .feature img {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    padding: 0 0 0 0;
+    float: none;
+  }
+
+  #features .feature + .feature {
+    border-top: 1px solid rgb(200, 200, 200);
+    margin-top: 2em;
+    padding-top: 1em;
+  }
+
+  a.connect {
+    width: 90%;
+  }
+
+  article.post.single h1.title {
+    text-align: center;
+  }
+
+  article.post.single h1.title small {
+    display: none;
+  }
+}
