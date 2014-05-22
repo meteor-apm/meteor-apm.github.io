@@ -353,7 +353,8 @@ article.post h1.title small a:hover {
   border-bottom: 1px solid rgba(140, 140, 140, 0.5);
 }
 
-article.post p {
+article.post p,
+article.post li {
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   font-size: 1.5em;
   line-height: 1.5;
@@ -362,6 +363,106 @@ article.post p {
 
 article p.summary {
   margin-top: 0.75em;
+}
+
+article.post.single {
+  -webkit-font-smoothing: antialiased;
+}
+
+article.post.single h1 {
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+article.post.single h1.title {
+  font-size: 2.5em;
+}
+
+article.post.single h1.title small {
+  font-size: 0.5em;
+}
+
+article.post.single h2 {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: #444;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+article.post.single h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #444;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+article.post.single h4 {
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: underline;
+  color: #444;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+article.post.single pre {
+  padding: 0px;
+}
+
+article.post.single code {
+  border: 1px solid rgb(255, 244, 244);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+article.post.single pre code {
+  padding: 15px;
+  border: 0px;
+}
+
+article.post.single img,
+article.post.single embed,
+article.post.single object,
+article.post.single iframe {
+  display: block;
+  max-width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 230);
+  box-sizing: border-box;
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+article.post.single img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+article.post.single a code:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+article.post.single a {
+  text-decoration: none;
+}
+
+article.post.single a:hover {
+  text-decoration: none;
+}
+
+article.post.single blockquote {
+  margin: 0;
+  padding: 0 1.5em;
+  border-style: solid;
+  border-color: rgba(111,186,135,1);
+  border-width: 0px 0px 0px 5px;
 }
 
 #footer {

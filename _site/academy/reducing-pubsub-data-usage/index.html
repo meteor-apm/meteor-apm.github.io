@@ -39,8 +39,10 @@
 
   <section id="main">
     <a href="http://mad.ly/signups/106626/join" class="subscribe">Subscribe to Academy</a>
-    <article class="post post-container">
-  <h1>Reducing PubSub Data Usage</h1>
+    <article class="post single post-container">
+  
+  <h1 class="title">Reducing PubSub Data Usage</h1>
+  
   <p>Publications are the main place where your app sends data to the client when a client subscribes to it. Meteor caches a copy of each client’s data in the server’s memory. For example, let’s say a single client has  approximately 2MB of subscription data. If you have 1000 concurrent clients connecting to your app, Meteor caches approximately 2GB (2MB * 1000) of client data in the server’s memory.</p>
 
 <p>If your app sends a large amount of data, it will take a considerable amount of time for it to reach the client (especially when utilizing mobile networks). So it is very important to reduce the amount of data your app sends to clients. Let’s see what we can do about it.</p>
